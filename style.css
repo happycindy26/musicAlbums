@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Zetta|Lora|Source+Code+Pro|Rale+way|lucida+Calligraphy|Niconne:400,700&display=swap');
+
+html, body {
+    font-size: 16px;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    background-color: rgb(8, 8, 8);   
+}
+.logo { 
+    margin: 0rem 2rem;
+    width: 3rem;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a {
+    font-family: "Rale way", sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding-right: 2rem;  
+    color: white;
+}
+nav a:hover {
+    color: #ff66c4;  
+}
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: black; 
+    margin-top: 0rem;
+}
+.icons i {
+    font-size: .8rem;
+    margin: 0.6rem;
+}
+.info {
+    display: flex;  
+}
+.info p {
+    font-size: 0.6rem;
+}
+.footer p {
+    margin: 0.6rem;
+}
+
+/* home page*/
+#home {
+    height: 87vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgb(255, 255, 255),
+        rgba(124, 137, 250, 0.8), 
+        rgb(255, 102, 196)) ,
+        url(./imgs/banner.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.title {
+    backface-visibility: hidden;
+}
+h1, h5 {
+    font-family: 'Niconne';
+    
+}
+h1 {
+    font-size: 2rem;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .6rem;
+}
+.intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.titleMain {
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    animation: moveInRight 1s ease-out;
+    margin: 3rem 2rem 2rem 2rem;
+}
+.titleSub {
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    animation: moveInLeft 1s ease-out;
+}
+.img1 {
+    margin: 2rem 6rem;
+}
+.img1:hover,
+.img2:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+.intro p{
+    margin: 1rem;
+}
+.p1 {
+    margin: 1rem;
+}
+.intro p a {
+    text-decoration: none;
+    color: white;
+}
+.intro p a:hover { 
+    background-color: #ff66c4;
+}
+.retro {
+    animation: moveInBottom 1s ease-out;
+}
+
+/* albums page */
+#albums {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+.albums {
+    width: 30vw;
+    background-image: url(./imgs/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    
+}
+.albums h1 {
+    margin: 2rem;
+}
+.albums p {
+    padding: 1rem;
+}
+table {
+    border-spacing: 0;
+}
+th {
+    font-family: 'Niconne';
+}
+th, td {
+    padding: .5rem 1rem;
+}
+td {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .8rem;
+}
+td img:hover {
+    transform: scale(1.1);
+}
+thead {
+    color: #fff;
+}
+th {
+    background-color: rgb(255, 102, 196);
+}
+th:first-child {
+    text-align: left;
+    border-radius: 10px 0 0 0;
+}
+th:last-child {
+    border-radius: 0 10px 0 0;
+}
+tbody tr:nth-child(even) {   
+    background-color: #f0f0f2;
+}
+td {
+    border-bottom: 1px solid #cecfd5;
+    border-right: 1px solid #cecfd5;
+}
+td:first-child {
+    border-left: 1px solid #cecfd5;
+}
+strong, span {
+    display: block;
+}
+
+/* contact page */
+#contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 6rem;
+  /* clip-path: polygon(50% 0, 76.5% 32.5%, 76% 91%, 23.5% 23%, 24% 38%); */
+}
+#contact h1 {
+    animation: rotate 2s ease-out; 
+    margin-left: 2rem;
+}
+.contact {
+   background-image: url(./imgs/envelope4.jpg);
+   background-size: cover;
+   background-position: top;
+   background-repeat: no-repeat;
+   margin: 0rem 2rem;
+}
+#form {
+    margin: 2rem;
+}
+input,
+textarea,
+.send {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .6rem;
+}
+input,
+textarea {
+    width: 30vw;
+    margin: .3rem 0rem;
+    padding: .2rem;    
+}
+.send {
+    padding: 0.3rem 2.5rem;
+    border-radius: 5rem;
+    border: none;
+    font-weight: 700;
+    background-color: white;
+}
+.send:hover {
+    color:rgb(129, 228, 105);
+    background-color:rgb(8, 8, 8);
+}
+
+.contactMap {
+    margin: 3rem;
+}
+iframe {
+    height: 22rem;
+    border: 0rem;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20rem);
+    }
+    80% {
+        transform: translateX(1.25rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20rem);
+    }
+    80% {
+        transform: translateX(-1.25rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(6rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes rotate {
+    0% {
+      opacity: 0;
+      transform: translateY(50rem) rotate(-150deg); }
+    40% {
+      transform: rotate(120deg); }
+    60% {
+      transform: rotate(320deg); }
+    80% {
+      transform: translateY(6rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0) rotate(-60deg); } 
+}
+
+
+@media only screen and (max-width: 576px) {
+    html, body {
+        overflow-x: hidden;  
+    }  
+    nav a {
+        font-size: .5rem;
+    }
+    .titleMain {
+        margin-top: 5rem;
+    }
+    #home {
+        height: 100vh;
+    }
+    .footer {
+        display: block;
+    }
+    .info {
+        display: block;
+    }
+    #albums {
+        display: block;
+        margin: 1rem .2rem;
+    }
+    .albums {
+        width: 90vw;
+        margin: 1rem;
+    }
+    .albums h1 {
+        padding: 1rem 0;
+    }
+    .albums p:last-child {
+        padding-bottom: 2rem;
+    }
+    #contact {
+        display: block;
+        margin: 2rem auto; 
+    }
+    input,
+    textarea,
+    .send {
+        width: 85vw;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }  
+    nav {
+        margin: 1rem auto;
+    }
+    .titleMain {
+        margin-top: 5rem;
+    }
+    .footer {
+        display: block;
+    }
+    .info {
+        display: block;
+    }
+    #albums {
+        display: block;
+    }
+    .albums {
+        width: 90vw;
+        margin: 1rem;
+    }
+    #contact {
+        display: block;
+    }
+    .contact {
+        margin: 0 2rem;
+    }
+    input,
+    textarea,
+    .send {
+        width: 55vw;
+    }
+    
+}
+@media only screen and (max-width: 992px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .contact h1 {
+        margin: 0 3rem;
+    }
+    .titleMain {
+        margin-top: 0rem;
+    }
+    
+    
+}

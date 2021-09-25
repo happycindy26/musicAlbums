@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Retro Records</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+
+<body>
+    <header>   
+        <a href="index.html"><img class="logo" src="imgs/33.png" alt="logo"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="albums.html">Albums</a>
+            <a href="#">Lps</a>
+            <a href="#">Records</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main id="contact">
+        <section class="contact">
+            <h1>Contact us</h1>
+            <form id="form">
+                <label for="firstName"></label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                <br>
+                <label for="lastName"></label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                <br>
+                <label for="phone"></label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone" required>
+                <br>
+                <label for="email" ></label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <br>
+                <label for="title"></label>
+                <input type="text" name="title" id="title" placeholder="Album Title" required>
+                <br>
+                <label for="artistName"></label>
+                <input type="text" name="artistName" id="artistName" placeholder="Artist" required>
+                <br>
+                <label for="message" class="topmessage"></label>
+                <textarea id="message" name="message" rows="8" cols="67" placeholder="Message"></textarea>
+                <br>
+                <input class="send" type="submit" value="Send">   
+            </form>  
+        </section>
+        <section class="contactMap">
+            <h5>Find Us</h5>
+            <div class="mapouter">
+                <div class="map_canvas">
+                    <iframe width="300" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=145%20king%20st,%20newtown%202000&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                    </iframe><a href="https://123movies-to.org"></a>
+                    <br> 
+                    <!-- <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>  -->
+                    <a href="https://www.embedgooglemap.net"></a>
+                    <!-- <style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:300px;}</style>  -->
+                </div>
+                <p><strong>We are located at the top of King Street, just near the Marly Hotel.</strong> </p>
+                <p><strong>Phone us on (02) 9519 1234</strong></p>
+            </div>  
+        </section> 
+    </main>
+
+    <footer class="footer"> 
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-youtube-square"></i>
+        </div>
+        <div class="info">
+            <p class="">&copy; Retro Records Newtown Pty Limited 2021. All Rights Reserved</p>  
+            <p>info@retrorecordsnewtown.com.au</p>
+            <p>legals</p>
+        </div>  
+    </footer>     
+    <script src="script.js" ></script>
+</body>
+</html>
