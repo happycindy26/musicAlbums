@@ -9,32 +9,39 @@ html, body {
 }
 
 /* header */
-header {
-    width: 100%;
-    display: flex; 
-    justify-content: space-between;
-    background-color: rgb(8, 8, 8);   
+.header {
+    background-color: rgb(8, 8, 8); 
 }
-.logo { 
-    margin: 0rem 2rem;
-    width: 3rem;
+.logo {
+    margin: 1rem 2rem;
 }
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.header ul {
+    list-style: none;
+    margin-top: 2rem;
 }
-nav a {
-    font-family: "Rale way", sans-serif;
-    font-size: .8rem;
-    font-weight: 600;
+.header li {
+    float: left;
+  }
+.header li a {
+    padding: 2rem;
     text-decoration: none;
-    padding-right: 2rem;  
     color: white;
 }
-nav a:hover {
-    color: #ff66c4;  
+.header li a:hover {
+    color:rgb(255, 102, 196);
+} 
+.header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
 }
+.header .menu-icon {
+    display: none;
+}
+.header .menu-btn {
+    display: none;
+}
+
 /* footer */
 .footer {
     display: flex;
@@ -42,17 +49,14 @@ nav a:hover {
     align-items: center;
     color: white;
     background-color: black; 
-    margin-top: 0rem;
+    /* padding: 1rem; */
 }
 .icons i {
-    font-size: .8rem;
-    margin: 0.6rem;
+  
+    margin: 1rem;
 }
 .info {
     display: flex;  
-}
-.info p {
-    font-size: 0.6rem;
 }
 .footer p {
     margin: 0.6rem;
@@ -60,7 +64,7 @@ nav a:hover {
 
 /* home page*/
 #home {
-    height: 87vh;
+    height: 110vh;
     background-image: linear-gradient(
         to right bottom, 
         rgb(255, 255, 255),
@@ -75,14 +79,13 @@ nav a:hover {
 }
 h1, h5 {
     font-family: 'Niconne';
-    
 }
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 p {
     font-family: 'Times New Roman', Times, serif;
-    font-size: .6rem;
+    font-size: .8rem;
 }
 .intro {
     position: absolute;
@@ -96,11 +99,10 @@ p {
     font-weight: 700;
     letter-spacing: 0.1rem;
     animation: moveInRight 1s ease-out;
-    margin: 3rem 2rem 2rem 2rem;
+    margin-top: 15rem;
 }
 .titleSub {
     display: block;
-    font-size: 1.5rem;
     letter-spacing: 0.3rem;
     animation: moveInLeft 1s ease-out;
 }
@@ -113,7 +115,8 @@ p {
     transform: scale(1.2);
 }
 .intro p{
-    margin: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 .p1 {
     margin: 1rem;
@@ -137,17 +140,6 @@ p {
 }
 .albums {
     width: 30vw;
-    background-image: url(./imgs/bg2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    
-}
-.albums h1 {
-    margin: 2rem;
-}
-.albums p {
-    padding: 1rem;
 }
 table {
     border-spacing: 0;
@@ -196,12 +188,12 @@ strong, span {
 #contact {
     display: flex;
     justify-content: space-around;
-    margin: 0 6rem;
-  /* clip-path: polygon(50% 0, 76.5% 32.5%, 76% 91%, 23.5% 23%, 24% 38%); */
+    align-items: center;
+    margin: 0 3rem;
 }
 #contact h1 {
     animation: rotate 2s ease-out; 
-    margin-left: 2rem;
+    margin-top: 0rem;
 }
 .contact {
    background-image: url(./imgs/envelope4.jpg);
@@ -236,9 +228,8 @@ textarea {
     color:rgb(129, 228, 105);
     background-color:rgb(8, 8, 8);
 }
-
 .contactMap {
-    margin: 3rem;
+    margin: 3rem auto;
 }
 iframe {
     height: 22rem;
@@ -274,7 +265,7 @@ iframe {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(6rem);
+        transform: translateY(3rem);
     }
     100%{
         opacity: 1;
@@ -296,98 +287,198 @@ iframe {
       transform: translate(0) rotate(-60deg); } 
 }
 
-
-@media only screen and (max-width: 576px) {
+/* 992px=62em */
+@media only screen and (max-width: 62em) {
     html, body {
-        overflow-x: hidden;  
-    }  
-    nav a {
-        font-size: .5rem;
-    }
-    .titleMain {
-        margin-top: 5rem;
+        overflow-x: hidden;
     }
     #home {
-        height: 100vh;
-    }
-    .footer {
-        display: block;
-    }
-    .info {
-        display: block;
-    }
-    #albums {
-        display: block;
-        margin: 1rem .2rem;
-    }
-    .albums {
-        width: 90vw;
-        margin: 1rem;
-    }
-    .albums h1 {
-        padding: 1rem 0;
-    }
-    .albums p:last-child {
-        padding-bottom: 2rem;
-    }
-    #contact {
-        display: block;
-        margin: 2rem auto; 
-    }
-    input,
-    textarea,
-    .send {
-        width: 85vw;
-    }
-    
-}
-
-@media only screen and (max-width: 768px) {
-    html, body {
-        overflow-x: hidden;
-    }  
-    nav {
-        margin: 1rem auto;
+        height: 140vh;
     }
     .titleMain {
-        margin-top: 5rem;
+        margin-top: 25rem;
+    }  
+    h1 {
+        font-size: 2rem;
     }
     .footer {
         display: block;
     }
-    .info {
-        display: block;
-    }
     #albums {
-        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .albumsTable {
+        width: 75vw;
+        margin: 2rem;
     }
     .albums {
-        width: 90vw;
-        margin: 1rem;
-    }
-    #contact {
-        display: block;
-    }
-    .contact {
-        margin: 0 2rem;
-    }
-    input,
-    textarea,
-    .send {
-        width: 55vw;
-    }
-    
-}
-@media only screen and (max-width: 992px) {
-    html, body {
-        overflow-x: hidden;
+        width: 85vw;
     }
     .contact h1 {
         margin: 0 3rem;
+    } 
+}
+
+/* 768px=48em */
+@media only screen and (max-width: 48em) {
+    html, body {
+        overflow-x: hidden;
+    }  
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+      }
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+    .header li a {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+    } 
+    .header li a:hover,
+    .header .menu-btn:hover {
+        color:rgb(255, 102, 196);
+    } 
+
+      /* menu */
+    .header .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+      
+      /* menu icon */
+    .header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    .header .menu-icon .navicon {
+        background: rgb(180, 175, 175);
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    } 
+    .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after {
+        background: rgb(180, 175, 175);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    } 
+    .header .menu-icon .navicon:before {
+        top: 5px;
+    } 
+    .header .menu-icon .navicon:after {
+        top: -5px;
+    }
+      
+      /* menu btn */ 
+    .header .menu-btn {
+        display: none;
+    } 
+    .header .menu-btn:checked ~ .menu {
+        max-height: 240px;
+    }
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }  
+    .header .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }  
+    .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    } 
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+      
+    #home {
+        height: 160vh;
+    }
+    .title {
+        margin-bottom: 3rem;
     }
     .titleMain {
-        margin-top: 0rem;
+        margin-top: 28rem;
     }
-    
-    
+    h1 {
+        font-size: 1.2rem;
+    }
+    .footer {
+        display: block;
+    }
+    .info {
+        display: block;
+    }
+    .albumsTable {
+        width: 85vw;
+    }
+    .albums h1 {
+        margin-top: 10rem;
+    }
+    input,
+    textarea,
+    .send {
+        width: 65vw;
+    }
+    #contact {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact {
+        margin-top: 10rem;
+    }  
+}
+
+/* 1em=16px 36em=576px  */
+@media only screen and (max-width: 36em) {
+    html, body {
+        overflow-x: hidden;  
+    }  
+    h1 {
+        font-size: 1.1rem;
+    }
+    #home {
+        height: 160vh;
+    }
+    .logo {
+        margin: 0rem;
+    }
+    .footer {
+        display: block;
+    }
+    .info {
+        display: block;
+    }
+    .albumsTable {
+        width: 95vw;
+    }
+    input,
+    textarea,
+    .send {
+        width: 75vw;
+    }
+    #contact {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
