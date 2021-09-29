@@ -404,6 +404,12 @@ iframe {
     .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
         top: 0;
     }
+    #home {
+        height: 120vh;
+    }
+    .titleMain {
+        margin-top: 22rem;
+    }
     .title {
         margin-bottom: 3rem;
     }
@@ -449,7 +455,7 @@ iframe {
         height: 140vh;
     }
     .titleMain {
-        margin-top: 30rem;
+        margin-top: 26rem;
     }
     .footer {
         display: block;
