@@ -49,10 +49,8 @@ html, body {
     align-items: center;
     color: white;
     background-color: black; 
-    /* padding: 1rem; */
 }
 .icons i {
-  
     margin: 1rem;
 }
 .info {
@@ -64,7 +62,7 @@ html, body {
 
 /* home page*/
 #home {
-    height: 90vh;
+    height: 100vh;
     background-image: linear-gradient(
         to right bottom, 
         rgb(255, 255, 255),
@@ -72,7 +70,7 @@ html, body {
         rgb(255, 102, 196)) ,
         url(./imgs/banner.jpg);
     background-size: cover;
-    background-position: center; 
+    background-position: center;  
 }
 .title {
     backface-visibility: hidden;
@@ -116,7 +114,7 @@ p {
 }
 .intro p{
     margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .p1 {
     margin: 1rem;
@@ -405,7 +403,7 @@ iframe {
         top: 0;
     }
     #home {
-        height: 120vh;
+        min-height: 120vh;
     }
     .titleMain {
         margin-top: 22rem;
@@ -459,6 +457,7 @@ iframe {
     }
     .footer {
         display: block;
+        margin-top: 2rem;
     }
     .info {
         display: block;
