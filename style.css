@@ -99,7 +99,7 @@ p {
     font-weight: 700;
     letter-spacing: 0.1rem;
     animation: moveInRight 1s ease-out;
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 .titleSub {
     display: block;
@@ -447,6 +447,9 @@ iframe {
     }
     #home {
         height: 140vh;
+    }
+    .titleMain {
+        margin-top: 30rem;
     }
     .footer {
         display: block;
