@@ -17,6 +17,7 @@
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="albums.html">Albums</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </header>
@@ -25,27 +26,33 @@
         <section class="contact">
             <h1>Contact us</h1>
             <form id="form">
-                <label for="firstName"></label>
-                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                <label for="firstName">First Name:</label>
                 <br>
-                <label for="lastName"></label>
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                <input type="text" name="firstName" id="firstName"  required>
                 <br>
-                <label for="phone"></label>
-                <input type="tel" name="phone" id="phone" placeholder="Phone" required>
+                <label for="lastName">Last Name:</label>
                 <br>
-                <label for="email" ></label>
-                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="text" name="lastName" id="lastName"  required>
                 <br>
-                <label for="title"></label>
-                <input type="text" name="title" id="title" placeholder="Album Title" required>
+                <label for="phone">Phone:</label>
                 <br>
-                <label for="artistName"></label>
-                <input type="text" name="artistName" id="artistName" placeholder="Artist" required>
+                <input type="tel" name="phone" id="phone"  required>
                 <br>
-                <label for="message" class="topmessage"></label>
+                <label for="email" >Email:</label>
+                <br>
+                <input type="email" name="email" id="email"  required>
+                <br>
+                <label for="title">Album Title:</label>
+                <br>
+                <input type="text" name="title" id="title"  required>
+                <br>
+                <label for="artistName">Artist:</label>
+                <br>
+                <input type="text" name="artistName" id="artistName"  required>
+                <br>
+                <!-- <label for="message" class="topmessage"></label>
                 <textarea id="message" name="message" rows="8" cols="67" placeholder="Message"></textarea>
-                <br>
+                <br> -->
                 <input class="send" type="submit" value="Send">   
             </form>  
         </section>
