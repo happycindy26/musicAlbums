@@ -1,5 +1,5 @@
 const slideImg = document.querySelectorAll(".slide-img");
-//const slideContainer= document.querySelector(".slide-container");
+const slideContainer= document.querySelector(".slide-container");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const singleDot = document.querySelectorAll(".single-dot");
@@ -36,21 +36,34 @@ prevBtn.addEventListener("click", () => {
     singleDot[slideIndex].classList.add("active");
 })
 
+let autoplay;
+const slideImgs = () => {
+    autoplay = setInterval(function() {
+        slideImg.forEach(slide => {
+            slide.classList.remove("active");
+        })
+        singleDot.forEach(dot => {
+            dot.classList.remove("active");
+        })
+        slideIndex++;
+        if (slideIndex > (numImgs -1)) {
+            slideIndex = 0;
+        }
+        slideImg[slideIndex].classList.add("active");
+        singleDot[slideIndex].classList.add("active");  
+    }, 3000);     
+}
+slideImgs();
 
-// const slideImgs = () => {
-//     slideImg.forEach(slide => {
-//         slide.classList.remove("active");
-//     })
-//     singleDot.forEach(dot => {
-//         dot.classList.remove("active");
-//     })
-//     slideIndex++;
-//     if (slideIndex > (numImgs -1)) {
-//         slideIndex = 0;
+slideContainer.addEventListener("mouseover", () => {
+    clearInterval(autoplay);
+})
+
+// function playNavigationDots() {
+//     for (let i = 0; i < numImgs; i++) {
+//         const dot = document.createElement("div");
+//         dot.classList.add("single-dot");
+//         navigationDots.appendChild(dot);
 //     }
-//     slideImg[slideIndex].classList.add("active");
-//     singleDot[slideIndex].classList.add("active");
-//     setTimeout(slideImgs, 3000);
+//     navigationDots.children[0].classList.add("active");
 // }
-// slideImgs();
-
