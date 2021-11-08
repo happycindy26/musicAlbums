@@ -67,3 +67,19 @@ slideContainer.addEventListener("mouseover", () => {
 //     }
 //     navigationDots.children[0].classList.add("active");
 // }
+
+const question = document.getElementsByClassName("question");
+  for (let i = 0; i < question.length; i++) {
+    question[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the answer */
+    this.classList.toggle("active");
+    /* Toggle between hiding and showing the active answer */
+    const answer = this.nextElementSibling;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+}

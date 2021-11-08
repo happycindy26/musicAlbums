@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Retro Records</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="imgs/99.png" alt="log"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="albums.html">Albums</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <main class="faq">
+        <p class="question">What makes Retro Records' albums so special?</p>
+        <div class="answer">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis architecto, illum saepe, placeat alias eveniet sunt adipisci nobis est suscipit magni maxime aliquid autem aut voluptates tenetur quo deserunt?</p>
+        </div>
+        
+        <p class="question">How long does the ordering process take?</p>
+        <div class="answer">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nisi velit, rem exercitationem sapiente vero distinctio illum minus doloribus molestiae dolorum eius, dolore possimus et mollitia quidem deserunt corrupti dicta.</p>
+        </div>
+          
+        <p class="question">How much does an Album cost?</p>
+        <div class="answer">
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam fuga veritatis porro consequuntur corrupti necessitatibus tempora dolores, ipsum, pariatur obcaecati officiis minus, ex quod repellat nulla cupiditate provident dolore?</p>
+        </div>
+        <p class="question">What makes Retro Records' albums so special?</p>
+        <div class="answer">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis architecto, illum saepe, placeat alias eveniet sunt adipisci nobis est suscipit magni maxime aliquid autem aut voluptates tenetur quo deserunt?</p>
+        </div>
+        
+        <p class="question">How long does the ordering process take?</p>
+        <div class="answer">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nisi velit, rem exercitationem sapiente vero distinctio illum minus doloribus molestiae dolorum eius, dolore possimus et mollitia quidem deserunt corrupti dicta.</p>
+        </div>
+    </main>
+    <footer class="footer"> 
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-youtube-square"></i>
+        </div>
+        <div class="info">
+            <p class="">&copy; Retro Records Newtown Pty Limited 2021. All Rights Reserved</p>  
+            <p>info@retrorecordsnewtown.com.au</p>
+            <p>legals</p>
+        </div>  
+    </footer>      
+<script>
+  const question = document.getElementsByClassName("question");
+  for (let i = 0; i < question.length; i++) {
+    question[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the answer */
+    this.classList.toggle("active");
+    /* Toggle between hiding and showing the active answer */
+    const answer = this.nextElementSibling;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
+
+
+

@@ -249,6 +249,42 @@ strong, span {
 .single-dot.active {
     background-color: lightgray;
 }
+
+/* FAQ page  */
+.faq {
+    min-height: 65vh;
+    display: block;
+    width: 90%;
+    margin: 2rem;
+  }
+  .question {
+    cursor: pointer;
+    padding: 18px;
+    border-bottom: 1.2px solid lightgray;
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .question:hover {
+    background-color: lightgray;
+  }
+
+/* Style the question answer. Note: hidden by default */
+  .answer {
+    display: none;
+    overflow: hidden;
+    margin: 1rem 0 1rem 3rem;
+  }
+  .question:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: left;
+    margin-right: 1rem;
+    background-color: black;
+    border-radius: 50%;
+  }
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
 /* contact page */
 #contact {
     min-height: 90vh;
@@ -377,6 +413,9 @@ iframe {
     .albums {
         width: 85vw;
     }
+    .faq {
+        min-height: 80vh;
+    }
     .contact h1 {
         margin: 0 3rem;
     } 
@@ -391,6 +430,7 @@ iframe {
         position: fixed;
         width: 100%;
         z-index: 3;
+        font-size: 0.8rem;
       }
     .header ul {
         margin: 0;
@@ -495,6 +535,9 @@ iframe {
     .send {
         width: 65vw;
     }
+    .faq {
+        min-height: 85vh;
+    }
     #contact {
         justify-content: center;
         align-items: center;
@@ -519,6 +562,9 @@ iframe {
     #home {
         height: 140vh;
     }
+    .header {
+        font-size: 0.7rem;
+    }
     .titleMain {
         margin-top: 26rem;
     }
@@ -538,6 +584,11 @@ iframe {
     textarea,
     .send {
         width: 75vw;
+    }
+    .faq {
+        min-height: 90vh;
+        padding-top: 6rem;
+        margin: auto;
     }
     #contact {
         justify-content: center;
