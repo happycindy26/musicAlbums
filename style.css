@@ -275,7 +275,8 @@ strong, span {
   }
   .question:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
+    font-size: 0.4rem;
+    padding: 0.2rem;
     color: #777;
     float: left;
     margin-right: 1rem;
