@@ -283,7 +283,7 @@ strong, span {
     background-color: black;
     border-radius: 50%;
   }
-.active:after {
+.question.active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 /* contact page */
