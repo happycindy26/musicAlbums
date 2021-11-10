@@ -23,7 +23,7 @@ html, body {
     float: left;
   }
 .header li a {
-    padding: 2rem;
+    padding: 0 .7rem;
     text-decoration: none;
     color: white;
 }
@@ -62,7 +62,7 @@ html, body {
 
 /* home page*/
 #home {
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(
         to right bottom, 
         rgb(255, 255, 255),
@@ -70,7 +70,8 @@ html, body {
         rgb(255, 102, 196)) ,
         url(./imgs/banner.jpg);
     background-size: cover;
-    background-position: center;  
+    background-position: center; 
+    position: relative; 
 }
 .title {
     backface-visibility: hidden;
@@ -97,7 +98,6 @@ p {
     font-weight: 700;
     letter-spacing: 0.1rem;
     animation: moveInRight 1s ease-out;
-    margin-top: 15rem;
 }
 .titleSub {
     display: block;
@@ -189,9 +189,7 @@ strong, span {
     width: 100%;
   }
 .slide-container {
-/* height: 500px; */
     height: 80vh;
-/* height: 20rem; */
     position: relative;
 }
 .slide-img {
@@ -510,12 +508,6 @@ iframe {
     .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
         top: 0;
     }
-    #home {
-        min-height: 120vh;
-    }
-    .titleMain {
-        margin-top: 22rem;
-    }
     .title {
         margin-bottom: 3rem;
     }
@@ -561,13 +553,10 @@ iframe {
         margin: 0rem;
     }
     #home {
-        height: 140vh;
+        min-height: 120vh;
     }
     .header {
         font-size: 0.7rem;
-    }
-    .titleMain {
-        margin-top: 26rem;
     }
     .footer {
         display: block;
